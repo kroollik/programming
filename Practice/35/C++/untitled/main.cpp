@@ -21,6 +21,10 @@ void create(IntArray* arr, int size)
 }
 void create(IntArray& arr, int size)
 {
+    if (size <= 0)
+    {
+        return;
+    }
     int* Array = new int[size];
     arr.data = Array;
     arr.size = size;
